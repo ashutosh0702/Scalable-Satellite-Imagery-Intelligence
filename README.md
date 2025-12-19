@@ -1,8 +1,7 @@
 # Scalable-Satellite-Imagery-Intelligence
 The objective is to move from passive observation (images) to active inference (decision engines). This system is designed to bypass the 'noisy' nature of traditional spectral indices by utilizing local similarity-based deep learning."
 
-'''mermaid
-
+```mermaid
 graph TD
 
     subgraph "Data Orchestration Layer"
@@ -30,4 +29,4 @@ graph TD
     style G fill:#f9f,stroke:#333,stroke-width:2px
     style D fill:#bbf,stroke:#333,stroke-width:2px
     style L fill:#bfb,stroke:#333,stroke-width:2px
-'''
+```
