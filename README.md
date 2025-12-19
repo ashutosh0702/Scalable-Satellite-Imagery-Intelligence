@@ -1,7 +1,10 @@
 # Scalable-Satellite-Imagery-Intelligence
 The objective is to move from passive observation (images) to active inference (decision engines). This system is designed to bypass the 'noisy' nature of traditional spectral indices by utilizing local similarity-based deep learning."
 
+'''mermaid
+
 graph TD
+
     subgraph "Data Orchestration Layer"
         A[Satellite Constellations: Sentinel-2 / PRISMA] --> B(STAC API Ingestion)
         B --> C{Preprocessing Pipe}
@@ -9,7 +12,7 @@ graph TD
         C --> C2[Cloud & Shadow Masking]
         C1 & C2 --> D[DVC: Data Versioning]
     end
-
+    
     subgraph "The Inference Engine (Deep Learning)"
         D --> E[Spatial-Spectral Patch Extraction]
         E --> F[Dimensionality Reduction: 3D-CNN / Transformers]
@@ -27,3 +30,4 @@ graph TD
     style G fill:#f9f,stroke:#333,stroke-width:2px
     style D fill:#bbf,stroke:#333,stroke-width:2px
     style L fill:#bfb,stroke:#333,stroke-width:2px
+'''
